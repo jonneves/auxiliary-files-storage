@@ -1,0 +1,25 @@
+{
+    "environment":"dev",
+    "devServicesUrl":"http://localhost:8243/t/senior.com.br/bridge/1.0/",
+    "testServicesUrl":"",
+    "servicesUrl":"",
+    "modules":[
+	{
+            "id":"erp",
+            "url":"http://localhost:9763/erp/",
+            "description":"GESTÃO EMPRESARIAL | ERP",
+            "color":"verde"
+        },
+		{
+            "id":"users",
+            "url":"http://localhost/users/",
+            "description":"CONTROLE DE USUÁRIOS E PERMISSÕES",
+            "color":"vermelho"
+        }
+
+    ],
+	"helpUrl" : "http://documentacao.senior.com.br/",
+    "helpContext" : "plataforma",
+    "defaultTenant" : "tenant",
+    "domain" : "localhost" 
+}
