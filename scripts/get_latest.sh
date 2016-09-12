@@ -41,7 +41,7 @@ fi
 
 
 # Endereço do servidor
-server=http://maven.senior.com.br:8081/artifactory
+server=http://10.0.0.14:8081/artifactory
 
 # Nome do repositório
 repo=libs-release-local
