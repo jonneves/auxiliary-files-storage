@@ -1,0 +1,58 @@
+{
+	"id" : "Cliente",
+	"fields" : [{
+		"id" : "id",
+		"type" : "integer",
+		"customizable" : true,
+		"customization" : {
+			"change" : {},
+			"label" : "Código",
+			"order" : 1,
+			"active" : true,
+			"validationRegex" : "",
+			"tooltip" : "Este é o código",
+			"mask" : ""
+		}
+	},
+	{
+		"id" : "name",
+		"type" : "string",
+		"customizable" : true,
+		"customization" : {
+			"change" : {},
+			"label" : "Nome",
+			"order" : 2,
+			"active" : true,
+			"validationRegex" : "",
+			"tooltip" : "Este é o nome",
+			"mask" : ""
+		}
+	},{
+		"id" : "description",
+		"type" : "string",
+		"customizable" : true,
+		"customization" : {
+			"change" : {},
+			"label" : "Descrição",
+			"order" : 4,
+			"active" : true,
+			"validationRegex" : "",
+			"tooltip" : "Esta é a descrição",
+			"mask" : ""
+		}
+	},{
+		"id" : "teste",
+		"type" : "string",
+		"customizable" : false,
+		"customization" : {
+			"change" : {},
+			"label" : "Teste",
+			"order" : 5,
+			"active" : true,
+			"validationRegex" : "",
+			"tooltip" : "Esta campo não deveria aparecer",
+			"mask" : ""
+		}
+	}],
+	"active" : true
+}
