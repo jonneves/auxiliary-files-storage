@@ -2,7 +2,7 @@
 	"id" : "Cliente",
 	"fields" : [{
 		"id" : "id",
-		"type" : "integer",
+		"type" : "Integer",
 		"customizable" : true,
 		"customization" : {
 			"change" : {},
@@ -16,7 +16,7 @@
 	},
 	{
 		"id" : "name",
-		"type" : "string",
+		"type" : "String",
 		"customizable" : true,
 		"customization" : {
 			"change" : {},
@@ -29,7 +29,7 @@
 		}
 	},{
 		"id" : "description",
-		"type" : "string",
+		"type" : "String",
 		"customizable" : true,
 		"customization" : {
 			"change" : {},
@@ -41,8 +41,125 @@
 			"mask" : ""
 		}
 	},{
+		"id" : "lastContact",
+		"type" : "Date",
+		"customizable" : true,
+		"customization" : {
+			"change" : {},
+			"label" : "Data",
+			"order" : 5,
+			"active" : true,
+			"validationRegex" : "",
+			"tooltip" : "",
+			"mask" : ""
+		}
+	},{
+		"id" : "teste1",
+		"type" : "String",
+		"customizable" : true,
+		"customization" : {
+			"change" : {},
+			"label" : "Teste 01 - String",
+			"order" : 5,
+			"active" : true,
+			"validationRegex" : "",
+			"tooltip" : "",
+			"mask" : ""
+		}
+	},{
+		"id" : "teste2",
+		"type" : "String",
+		"customizable" : true,
+		"customization" : {
+			"change" : {},
+			"label" : "Teste 02 - String",
+			"order" : 5,
+			"active" : true,
+			"validationRegex" : "",
+			"tooltip" : "",
+			"mask" : ""
+		}
+	},{
+		"id" : "teste3",
+		"type" : "Boolean",
+		"customizable" : true,
+		"customization" : {
+			"change" : {},
+			"label" : "Teste 03 - Boolean",
+			"order" : 5,
+			"active" : true,
+			"validationRegex" : "",
+			"tooltip" : "",
+			"mask" : ""
+		}
+	},{
+		"id" : "teste4",
+		"type" : "Double",
+		"customizable" : true,
+		"customization" : {
+			"change" : {},
+			"label" : "Teste 04 - Double",
+			"order" : 6,
+			"active" : true,
+			"validationRegex" : "",
+			"tooltip" : "",
+			"mask" : ""
+		}
+	},{
+		"id" : "teste5",
+		"type" : "Date",
+		"customizable" : true,
+		"customization" : {
+			"change" : {},
+			"label" : "Teste 05 - Date",
+			"order" : 6,
+			"active" : true,
+			"validationRegex" : "",
+			"tooltip" : "",
+			"mask" : ""
+		}
+	},{
+		"id" : "teste6",
+		"type" : "DateTime",
+		"customizable" : true,
+		"customization" : {
+			"change" : {},
+			"label" : "Teste 06 - DateTime",
+			"order" : 6,
+			"active" : true,
+			"validationRegex" : "",
+			"tooltip" : "",
+			"mask" : ""
+		}
+	},{
+		"id" : "teste7",
+		"type" : "Time",
+		"customizable" : true,
+		"customization" : {
+			"change" : {},
+			"label" : "Teste 07 - Time",
+			"order" : 6,
+			"active" : true,
+			"validationRegex" : "",
+			"tooltip" : "",
+			"mask" : ""
+		}
+	},{
+		"id" : "teste8",
+		"type" : "Money",
+		"customizable" : true,
+		"customization" : {
+			"change" : {},
+			"label" : "Teste 08 - Money",
+			"order" : 5,
+			"active" : true,
+			"validationRegex" : "",
+			"tooltip" : "",
+			"mask" : ""
+		}
+	},{
 		"id" : "teste",
-		"type" : "string",
+		"type" : "String",
 		"customizable" : false,
 		"customization" : {
 			"change" : {},
