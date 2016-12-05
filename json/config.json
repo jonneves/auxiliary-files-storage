@@ -1,0 +1,88 @@
+{
+    "domain": "Domínio",
+    "service": "Serviço",
+    "menu":{
+        "label":"Gestão de Exemplo",
+        "children":[
+            {
+                "label":"Nível 01",
+                "auth":{
+                    "resource":"res://senior.com.br/security/usermanager/usuario",
+                    "permission":"Consultar"
+                },
+                "children":[
+                    {
+                        "label":"Nível 02",
+                        "auth":{
+                            "resource":"res://senior.com.br/security/usermanager/usuario",
+                            "permission":"Consultar"
+                        }
+                    }
+                ]
+            },
+            {
+                "label":"Dashboards",
+                "auth":{
+                    "resource":"res://senior.com.br/security/usermanager/usuario",
+                    "permission":"Consultar"
+                },
+                "children":[
+                    {
+                        "label":"Dash 01",
+                        "path":{
+                            "category":"Dashboard",
+                            "menuId":"https://meuservidor.com.br/frontend/dashboard"
+                        },
+                        "auth":{
+                            "resource":"res://senior.com.br/security/usermanager/usuario",
+                            "permission":"Consultar"
+                        }
+                    },
+                    {
+                        "label":"Dash 02",
+                        "path":{
+                            "category":"CurrentTab",
+                            "menuId":"https://meuservidor.com.br/frontend/tela"
+                        },
+                        "auth":{
+                            "resource":"res://senior.com.br/security/usermanager/usuario",
+                            "permission":"Consultar"
+                        },
+                        "help" : {
+                            "url" : "http://documentacao.senior.com.br/",
+                            "context" : "gestaoempresarialerp/7.0.0/"
+                        }
+                    }
+                ]
+            },
+            {
+                "label":"N-Level No Auth",
+                "children":[
+                    {
+                        "label":"Level 1",
+                        "children":[
+                            {
+                                "label":"Level 2",
+                                "children":[
+                                    {
+                                        "label":"Level3",
+                                        "children":[
+                                            {
+                                                "label":"Level 4",
+                                                "children":[
+                                                    {
+                                                        "label":"Congrats! You've made it"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
