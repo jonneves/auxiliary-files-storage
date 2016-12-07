@@ -1,0 +1,526 @@
+{
+  "url": "http://teste27.interno.senior.com.br:8080/erp/",
+  "landpage": "page.html",
+  "iframes": {
+    "folder": "iframes",
+    "items": [
+      {
+        "id": "inicializacao"
+      },
+      {
+        "id": "parametrizacao"
+      }
+    ]
+  },
+  "dashboards": {
+    "folder": "iframes"
+  },
+  "menu": {
+    "label": "ERP",
+    "children": [
+      {
+        "label": "Mercado",
+        "children": [
+          {
+            "label": "Painel",
+            "path": {
+              "category": "iframe",
+              "menuId": "http://teste27.interno.senior.com.br/mercado/#/"
+            },
+            "auth": {
+              "resource": "res://senior.com.br/erp_rgrc/rgrc_painelmercado/painelmercado",
+              "permission": "Consultar"
+            }
+          },
+          {
+            "label": "Consulta de clientes",
+            "path": {
+              "category": "iframe",
+              "menuId": "http://teste27.interno.senior.com.br/consulta/"
+            },
+            "auth": {
+              "resource": "res://senior.com.br/erp_ricl/ricl_infocliente/consultar",
+              "permission": "Consultar"
+            },
+            "help": {
+              "url": "http://documentacao.senior.com.br/gestaoempresarialerp/7.0.0/#Processos/consulta-cliente/consulta-cliente.htm%3FTocPath%3D_____2",
+              "context": "ricl/7.0.0"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Suprimentos",
+        "children": [
+          {
+            "label": "Painel",
+            "path": {
+              "category": "iframe",
+              "menuId": "http://teste27.interno.senior.com.br/suprimentos/#/"
+            },
+            "auth": {
+              "resource": "res://senior.com.br/erp_sgsu/sgsu_painelsuprimentos/painelsuprimentos",
+              "permission": "Consultar"
+            }
+          },
+          {
+            "label": "Inventario",
+            "children": [
+              {
+                "label": "Inicializacao do processo",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/inventario/current/#/inicializacao"
+                },
+                "auth": {
+                  "resource": "res://senior.com.br/erp_seiv/seiv_inventario/inicializacao",
+                  "permission": "Processar"
+                },
+                "help": {
+                  "url": "http://documentacao.senior.com.br/gestaoempresarialerp/7.0.0/#Processos/inventario/inventario-inicializacao.htm%3FTocPath%3DInvent%25C3%25A1rio%7C_____2",
+                  "context": "seiv/inicializacao/7.0.0"
+                }
+              },
+              {
+                "label": "Contagens",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/inventario/current/#/contagem"
+                },
+                "auth": {
+                  "resource": "res://senior.com.br/erp_seiv/seiv_inventario/contagem",
+                  "permission": "Processar"
+                },
+                "help": {
+                  "url": "http://documentacao.senior.com.br/gestaoempresarialerp/7.0.0/#Processos/inventario/inventario-contagens.htm%3FTocPath%3DInvent%25C3%25A1rio%7C_____3",
+                  "context": "seiv/contagens/7.0.0"
+                }
+              },
+              {
+                "label": "Finalizacao acerto",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/inventario/current/#/acerto"
+                },
+                "auth": {
+                  "resource": "res://senior.com.br/erp_seiv/seiv_inventario/finalizacao",
+                  "permission": "Processar"
+                },
+                "help": {
+                  "url": "http://documentacao.senior.com.br/gestaoempresarialerp/7.0.0/#Processos/inventario/inventario-finalizacao-acerto.htm%3FTocPath%3DInvent%25C3%25A1rio%7C_____4",
+                  "context": "seiv/finalizacao/7.0.0"
+                }
+              },
+              {
+                "label": "Estorno",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/inventario/current/#/estorno"
+                },
+                "auth": {
+                  "resource": "res://senior.com.br/erp_seiv/seiv_inventario/finalizacao",
+                  "permission": "Processar"
+                },
+                "help": {
+                  "url": "http://documentacao.senior.com.br/gestaoempresarialerp/7.0.0/#Processos/inventario/inventario-estorno.htm%3FTocPath%3DInvent%25C3%25A1rio%7C_____5",
+                  "context": "seiv/estorno/7.0.0"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Financas",
+        "children": [
+          {
+            "label": "Painel",
+            "path": {
+              "category": "iframe",
+              "menuId": "http://teste27.interno.senior.com.br/painelfinanceiro/#/"
+            }
+          },
+          {
+            "label": "Acionamento de cliente",
+            "auth": {
+              "resource": "res://senior.com.br/erp_frco/frco_recuperacaocredito/acionamento",
+              "permission": "Consultar"
+            },
+            "path": {
+              "category": "iframe",
+              "menuId": "http://teste27.interno.senior.com.br/frco-recuperacaocredito/#/clientes"
+            }
+          },
+          {
+            "label": "Fluxo de caixa",
+            "auth": {
+              "resource": "res://senior.com.br/erp_ffcx/ffcx_fluxocaixa",
+              "permission": "Consultar"
+            },
+            "children": [
+              {
+                "label": "Parametrizacoes",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/fluxo-caixa/current/#/parametrizacoes"
+                },
+                "help": {
+                  "url": "http://documentacao.senior.com.br/gestaoempresarialerp/7.0.0/#Processos/fluxo-de-caixa/parametrizacoes.htm%3FTocPath%3DFluxo%2520de%2520Caixa%7C_____2",
+                  "context": "ffcx/parametrizacoes/7.0.0"
+                }
+              },
+              {
+                "label": "Cenarios",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/fluxo-caixa/current/#/cenarios"
+                },
+                "help": {
+                  "url": "http://documentacao.senior.com.br/gestaoempresarialerp/7.0.0/#Processos/fluxo-de-caixa/cenarios.htm%3FTocPath%3DFluxo%2520de%2520Caixa%7C_____3",
+                  "context": "ffcx/cenarios/7.0.0"
+                }
+              },
+              {
+                "label": "Distribuicoes",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/fluxo-caixa/current/#/distribuicoes"
+                },
+                "help": {
+                  "url": "http://documentacao.senior.com.br/gestaoempresarialerp/7.0.0/#Processos/fluxo-de-caixa/distribuicoes.htm%3FTocPath%3DFluxo%2520de%2520Caixa%7C_____4",
+                  "context": "ffcx/distribuicoes/7.0.0"
+                }
+              },
+              {
+                "label": "Movimentacoes diversas",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/fluxo-caixa/current/#/movimentacoes"
+                },
+                "help": {
+                  "url": "http://documentacao.senior.com.br/gestaoempresarialerp/7.0.0/#Processos/fluxo-de-caixa/movimentacoes-diversas.htm%3FTocPath%3DFluxo%2520de%2520Caixa%7C_____5",
+                  "context": "ffcx/movimentacoes/7.0.0"
+                }
+              },
+              {
+                "label": "Percentuais",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/fluxo-caixa/current/#/percentuais"
+                },
+                "help": {
+                  "url": "http://documentacao.senior.com.br/gestaoempresarialerp/7.0.0/#Processos/fluxo-de-caixa/movimentacoes-diversas.htm%3FTocPath%3DFluxo%2520de%2520Caixa%7C_____5",
+                  "context": "ffcx/movimentacoes/7.0.0"
+                }
+              }
+            ]
+          },
+          {
+            "label": "Cadastros",
+            "children": [
+              {
+                "label": "Banco",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/erp-fceb-conciliacaobancaria/#/bankrecordList"
+                }
+              },
+              {
+                "label": "Agencia",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/erp-fceb-conciliacaobancaria/#/agencyrecordList"
+                }
+              },
+              {
+                "label": "Conta",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/erp-fceb-conciliacaobancaria/#/internalaccountrecordList"
+                }
+              }
+            ]
+          },
+          {
+            "label": "Tesouraria",
+            "children": [
+              {
+                "label": "Conciliacao extrato",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/erp-fceb-conciliacaobancaria/#/stepsbankconciliation"
+                }
+              },
+              {
+                "label": "Extrato bancario",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/erp-fceb-conciliacaobancaria/#/journalentry"
+                }
+              },
+              {
+                "label": "Movimento da conta",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/erp-fceb-conciliacaobancaria/#/bankmovement"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Controladoria",
+        "children": [
+          {
+            "label": "Painel",
+            "path": {
+              "category": "iframe",
+              "menuId": "http://teste27.interno.senior.com.br/erp-cgct-painelcontroladoria/#/"
+            },
+            "auth": {
+              "resource": "res://senior.com.br/erp_cgct/cgct_painelcontroladoria/painelcontroladoriaconsulta",
+              "permission": "Visualizar"
+            }
+          },
+          {
+            "label": "Configuracoes",
+            "path": {
+              "category": "iframe",
+              "menuId": "http://teste27.interno.senior.com.br/erp-cgct-painelcontroladoria/#/config"
+            },
+            "auth": {
+              "resource": "res://senior.com.br/erp_cgct/cgct_painelcontroladoria/painelcontroladoriaconsulta",
+              "permission": "Visualizar"
+            }
+          }
+        ]
+      },
+      {
+        "label": "Manufatura",
+        "children": [
+          {
+            "label": "Painel OEE",
+            "children": [
+              {
+                "label": "Visao diaria",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/oee/#/producao"
+                },
+                "auth": {
+                  "resource": "res://senior.com.br/erp_mgoe/mgoe_painel/painel oee",
+                  "permission": "visualizar Simplificado"
+                },
+                "help": {
+                  "url": "http://documentacao.senior.com.br/gestaoempresarialerp/7.0.0/#Processos/painel-oee/visao-diaria.htm%3FTocPath%3DPain%25C3%25A9is%2520de%2520Gest%25C3%25A3o%7CManufatura%7CPainel %2520OEE%7C_____2",
+                  "context": "mgoe/visaodiaria/7.0.0"
+                }
+              },
+              {
+                "label": "Visao gerencial",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/oee/#/gerencial"
+                },
+                "auth": {
+                  "resource": "res://senior.com.br/erp_mgoe/mgoe_painel/painel oee",
+                  "permission": "analisar Gerencial"
+                },
+                "help": {
+                  "url": "http://documentacao.senior.com.br/gestaoempresarialerp/7.0.0/#Processos/painel-oee/visao-gerencial.htm%3FTocPath%3DPain%25C3%25A9is%2520de%2520Gest%25C3%25A3o%7CManufatura%7CPainel %2520OEE%7C_____3",
+                  "context": "mgoe/visaogerencial/7.0.0"
+                }
+              },
+              {
+                "label": "Parametros",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/oee/#/parametros"
+                },
+                "auth": {
+                  "resource": "res://senior.com.br/erp_mgoe/mgoe_painel/painel oee",
+                  "permission": "Configurar"
+                },
+                "help": {
+                  "url": "http://documentacao.senior.com.br/gestaoempresarialerp/7.0.0/#Processos/painel-oee/parametros.htm%3FTocPath%3DPain%25C3%25A9is%2520de%2520Gest%25C3%25A3o%7CManufatura%7CPainel%2520OEE %7C_____4",
+                  "context": "mgoe/parametros/7.0.0"
+                }
+              },
+              {
+                "label": "Cadastro de dispositivos",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/oee/#/cadastrotvs"
+                },
+                "auth": {
+                  "resource": "res://senior.com.br/erp_mgoe/mgoe_painel/painel oee",
+                  "permission": "Configurar"
+                },
+                "help": {
+                  "url": "http://documentacao.senior.com.br/gestaoempresarialerp/7.0.0/#Processos/painel-oee/cadastro-dispositivos.htm%3FTocPath%3DPain%25C3%25A9is%2520de%2520Gest%25C3%25A3o%7CManufatura %7CPainel%2520OEE%7C_____5",
+                  "context": "mgoe/cadastrodispositivos/7.0.0"
+                }
+              }
+            ]
+          },
+          {
+            "label": "Engenharia",
+            "children": [
+              {
+                "label": "Classes",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste46:8081/#!/engenharia/classes"
+                }
+              },
+              {
+                "label": "Especificacoes de Produto",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste46:8081/#!/engenharia/especificacoes"
+                }
+              },
+              {
+                "label": "Centros de Recurso",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste46:8081/#!/engenharia/centros"
+                }
+              },
+              {
+                "label": "Recursos",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste46:8081/#!/engenharia/recursos"
+                }
+              },
+              {
+                "label": "Processo Industrial",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste46:8081/#!/engenharia/processo-industrial"
+                }
+              },
+              {
+                "label": "Estagios",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste46:8081/#!/engenharia/estagios"
+                }
+              },
+              {
+                "label": "Roteiros",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste46:8081/#!/engenharia/estagios"
+                }
+              },
+              {
+                "label": "Graficos",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste46:8081/#!/engenharia/graficos"
+                }
+              },
+              {
+                "label": "Componentes",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste46:8081/#!/engenharia/componentes"
+                }
+              },
+              {
+                "label": "SKU",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste46:8081/#!/engenharia/sku"
+                }
+              },
+              {
+                "label": "Engenharia de Produto",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste46:8081/#!/engenharia/produtos"
+                }
+              },
+              {
+                "label": "Engenharia de Processo",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste46:8081/#!/engenharia/processos"
+                }
+              },
+              {
+                "label": "Informacao Tecnica",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste46:8081/#!/engenharia/informacao-tecnica"
+                }
+              },
+              {
+                "label": "Parametros",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste46:8081/#!/engenharia/parametros"
+                }
+              },
+              {
+                "label": "Consultas",
+                "children": [
+                  {
+                    "label": "Unidades de Medida",
+                    "path": {
+                      "category": "iframe",
+                      "menuId": "http://teste46:8081/#!/engenharia/consultas/unidades-medida"
+                    }
+                  },
+                  {
+                    "label": "Calendario Fabril",
+                    "path": {
+                      "category": "iframe",
+                      "menuId": "http://teste46:8081/#!/engenharia/consultas/calendario-fabril"
+                    }
+                  },
+                  {
+                    "label": "Origem",
+                    "path": {
+                      "category": "iframe",
+                      "menuId": "http://teste46:8081/#!/engenharia/consultas/origem"
+                    }
+                  },
+                  {
+                    "label": "Componentes",
+                    "path": {
+                      "category": "iframe",
+                      "menuId": "http://teste46:8081/#!/engenharia/consultas/componentes"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Gestao de terceiros",
+            "children": [
+              {
+                "label": "Remessa",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/erp-mcrr-gestaoterceiros/current/"
+                }
+              },
+              {
+                "label": "Pendente de separacao",
+                "path": {
+                  "category": "iframe",
+                  "menuId": "http://teste27.interno.senior.com.br/erp-mcrr-gestaoterceiros/current/#/pendenteseparacao"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
