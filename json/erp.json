@@ -20,9 +20,11 @@
     "children": [
       {
         "label": "Mercado",
+        "itemIcon" : "fa-cogs",
         "children": [
           {
             "label": "Painel",
+            "itemIcon" : "fa-google",
             "path": {
               "category": "iframe",
               "menuId": "http://teste27.interno.senior.com.br/mercado/#/"
@@ -366,9 +368,11 @@
           },
           {
             "label": "Engenharia",
+            "itemIcon" : "fa-cogs",
             "children": [
               {
                 "label": "Classes",
+                "itemIcon" : "fa-circle",
                 "path": {
                   "category": "iframe",
                   "menuId": "http://teste46:8081/#!/engenharia/classes"
@@ -470,6 +474,7 @@
                 "children": [
                   {
                     "label": "Unidades de Medida",
+                    "itemIcon" : "fa-circle-o",
                     "path": {
                       "category": "iframe",
                       "menuId": "http://teste46:8081/#!/engenharia/consultas/unidades-medida"
