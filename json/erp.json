@@ -475,6 +475,7 @@
                   {
                     "label": "Unidades de Medida",
                     "itemIcon" : "fa-circle-o",
+                    "category" : "NewTab",
                     "path": {
                       "category": "iframe",
                       "menuId": "http://teste46:8081/#!/engenharia/consultas/unidades-medida"
@@ -482,8 +483,9 @@
                   },
                   {
                     "label": "Calendario Fabril",
+                    "itemIcon" : "fa-google",
                     "path": {
-                      "category": "iframe",
+                      "category": "DesktopNative",
                       "menuId": "http://teste46:8081/#!/engenharia/consultas/calendario-fabril"
                     }
                   },
