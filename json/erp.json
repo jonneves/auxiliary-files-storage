@@ -491,14 +491,14 @@
                   {
                     "label": "Origem",
                     "path": {
-                      "category": "iframe",
+                      "category": "NewTab",
                       "menuId": "http://teste46:8081/#!/engenharia/consultas/origem"
                     }
                   },
                   {
                     "label": "Componentes",
                     "path": {
-                      "category": "iframe",
+                      "category": "NewWindow",
                       "menuId": "http://teste46:8081/#!/engenharia/consultas/componentes"
                     }
                   }
