@@ -475,9 +475,8 @@
                   {
                     "label": "Unidades de Medida",
                     "itemIcon" : "fa-circle-o",
-                    "category" : "NewTab",
                     "path": {
-                      "category": "iframe",
+                      "category" : "NewTab",
                       "menuId": "http://teste46:8081/#!/engenharia/consultas/unidades-medida"
                     }
                   },
